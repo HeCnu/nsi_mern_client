@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input, Checkbox } from 'antd';
+import { Form, Input } from 'antd';
 import { Link } from 'react-router-dom'
 
 import { Block, Button } from 'components';
@@ -42,7 +42,7 @@ class LoginForm extends Component {
                         <Form.Item
                             label="Username"
                             name="username"
-                            rules={[{ required: true, message: 'Please input your username!' }]}
+                            rules={[{ required: true, message: 'Пожалуйста введите имя пользователя!' }]}
                         >
                             <Input size="large"/>
                         </Form.Item>
@@ -50,7 +50,7 @@ class LoginForm extends Component {
                         <Form.Item
                             label="Password"
                             name="password"
-                            rules={[{ required: true, message: 'Please input your password!' }]}
+                            rules={[{ required: true, message: 'Пожалуйста введите пароль!' }]}
                         >
                             <Input.Password size="large"/>
                         </Form.Item>
